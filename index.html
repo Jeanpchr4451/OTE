@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> OverTime Elite </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 20px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <div class="w3-bar w3-card" id="myNavbar" style="background-color: rgba(255, 255, 255, 1.0);">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+      <img src="OTE.png" alt="OverTime Elite Logo" style="width: 30px; height: 30px; margin-right: 8px;">
+      OverTime Elite
+    </a> 
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">How It Works</a>
+      <a href="#player" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Players</a>
+      <a href="#league" class="w3-bar-item w3-button"><i class="fa fa-th"></i> The League</a>
+      <a href="#shop" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Tech</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">How it Works</a>
+  <a href="#player" onclick="w3_close()" class="w3-bar-item w3-button">Players</a>
+  <a href="#league" onclick="w3_close()" class="w3-bar-item w3-button">The League</a>
+  <a href="#shop" onclick="w3_close()" class="w3-bar-item w3-button">Tech</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="w3-display-container w3-grayscale-min" id="home" style="height: 100vh; position: relative; overflow: hidden;">
+  <img src="Shooting2.png" alt="Shooting Background" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Experience the Future of Basketball</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Join the Elite Movement</span><br>
+    <span class="w3-large">Join the Elite Movement.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">How It Works</a></p>
+  </div> 
+  
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">How It Works</h3>
+  <p class="w3-center w3-large">More than just seeing the future. You feel it.</p>
+
+  <div class="w3-row-padding w3-margin-top">
+
+    <!-- OTE-Goggles V4 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="Goggles3.png" alt="OTE-Goggles V4" style="width:100%">
+        <div class="w3-container">
+          <h4>OTE-Goggles V4</h4>
+          <p>Lightweight AR headset with 16K retina lenses. Predicts motion, overlays the game in real-time.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NeuroChip S2 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="neurochip.png" alt="NeuroChip S2" style="width:100%">
+        <div class="w3-container">
+          <h4>NeuroChip S2</h4>
+          <p>Microgel patch implant simulates touch via BioHapticSync™. Feel rebounds, dunks, and blocks like they’re real.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CourtSync Grid -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="courtsync.png" alt="CourtSync Grid" style="width:100%">
+        <div class="w3-container">
+          <h4>CourtSync Grid</h4>
+          <p>Infrared floor mapping. Tracks footwork & adjusts virtual court size instantly via voice commands.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HaloLink Engine -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="halolink.png" alt="HaloLink Engine" style="width:100%">
+        <div class="w3-container">
+          <h4>HaloLink Engine</h4>
+          <p>AI-powered engine for ultra-fast multiplayer sync. Experience real-time avatars and feedback anywhere.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SmartAssist Mode -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-hover-shadow">
+        <img src="smartassist.png" alt="SmartAssist Mode" style="width:100%">
+        <div class="w3-container">
+          <h4>SmartAssist Mode</h4>
+          <p>Get visual guides, form corrections, and AR coach feedback live while you train.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pop-up Button -->
+    <div class="w3-third w3-margin-bottom w3-center">
+      <div class="w3-card w3-padding w3-hover-shadow" style="height:100%">
+        <h4>Explore VSPX System</h4>
+        <p>Want to see it in action?</p>
+        <button onclick="document.getElementById('vspxModal').style.display='block'" class="w3-button w3-black w3-round-large"> Yes </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- VSPX Modal Popup -->
+<div id="vspxModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="document.getElementById('vspxModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h2>VSPX System </h2>
+    </header>
+    <div class="w3-container w3-padding">
+      <p>This system combines AR, neuro-feedback, real-time physics, and multiplayer cloud sync. See what the future of basketball training could look like.</p>
+      <!-- Add your video or demo link here -->
+      <img src="EliteSample2.gif" alt="VSPX Demo Animation" style="width:100%; border-radius: 8px;">
+    </div>
+    <footer class="w3-container w3-light-grey w3-padding">
+      <p>Powered by Overtime Elite Labs • NeuroSync™ • HoloDrive Technologies</p>
+    </footer>
+  </div>
+</div>
+
+
+<!-- Promo Section - "We Know basketball" -->
+<div class="w3-container w3-white" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We Know basketball.</h3>
+      <p>The OTE League is the world's first completely augmented competitive basketball league, based on the cutting-edge VSPX technology. Here, great athletes do more than simply play basketball; they reinvent it.</p>
+      <p><a href="#league" class="w3-button w3-black"><i class="fa fa-th"> </i> Check out the league</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="Cool.png" alt="basketball" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px; background-color:#483a49; color:white;" id="player">
+  <h3 class="w3-center">MEET THE FOUNDING PLAYERS</h3>
+  <p class="w3-center w3-large">The athletes pioneering the future with VSPX Technology</p>
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    
+    <!-- Player 1 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="player1.png" alt="Eli Brooks" style="width:100%">
+        <div class="w3-container">
+          <h3>Eli Brooks</h3>
+          <p class="w3-opacity">VSPX Beta Leader</p>
+          <p>Known for his precision in virtual free-throws, Eli helped refine the NeuroChip feedback system.</p>
+          <p><button class="w3-button w3-white w3-block" onclick="document.getElementById('modal1').style.display='block'"><i class="fa fa-id-card"></i> View Resume</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player 2 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="player2.png" alt="Zion Myles" style="width:100%">
+        <div class="w3-container">
+          <h3>Zion Myles</h3>
+          <p class="w3-opacity">Smart Assist Advocate</p>
+          <p>A natural leader, Zion trains with visual trajectory overlays and AI feedback daily.</p>
+          <p><button class="w3-button w3-white w3-block" onclick="document.getElementById('modal2').style.display='block'"><i class="fa fa-id-card"></i> View Resume</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player 3 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="player3.png" alt="Malik James" style="width:100%">
+        <div class="w3-container">
+          <h3>Malik James</h3>
+          <p class="w3-opacity">CourtSync Engineer</p>
+          <p>Malik contributed to testing dynamic court dimensions for 1v1 to 5v5 formats.</p>
+          <p><button class="w3-button w3-white w3-block" onclick="document.getElementById('modal3').style.display='block'"><i class="fa fa-id-card"></i> View Resume</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player 4 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="player4.png" alt="Trey Carter" style="width:100%">
+        <div class="w3-container">
+          <h3>Trey Carter</h3>
+          <p class="w3-opacity">HaloLink Test Player</p>
+          <p>Trey was the first to play cross-continent games in real time using the HaloLink Engine.</p>
+          <p><button class="w3-button w3-white w3-block" onclick="document.getElementById('modal4').style.display='block'"><i class="fa fa-id-card"></i> View Resume</button></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Resume Modals -->
+<!-- Player 1 Modal -->
+<div id="modal1" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="document.getElementById('modal1').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3>Eli Brooks – Resume</h3>
+    </header>
+    <div class="w3-container">
+      <p><strong>Position:</strong> Shooting Guard | VSPX Beta Leader</p>
+      <p><strong>Key Skills:</strong> 3-point precision, AR coordination, neural response time</p>
+      <p><strong>Experience:</strong> Led feedback development on the NeuroChip S2, over 1,000 simulated shots weekly</p>
+      <p><strong>Email:</strong> eli.brooks@oteelite.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- Player 2 Modal -->
+<div id="modal2" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="document.getElementById('modal2').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3>Zion Myles – Resume</h3>
+    </header>
+    <div class="w3-container">
+      <p><strong>Position:</strong> Point Guard | Smart Assist Advocate</p>
+      <p><strong>Key Skills:</strong> Playmaking under pressure, SmartAssist interface testing</p>
+      <p><strong>Experience:</strong> Provided live feedback to HoloDrive's AR coaching module</p>
+      <p><strong>Email:</strong> zion.myles@oteelite.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- Player 3 Modal -->
+<div id="modal3" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="document.getElementById('modal3').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3>Malik James – Resume</h3>
+    </header>
+    <div class="w3-container">
+      <p><strong>Position:</strong> Forward | CourtSync Engineer</p>
+      <p><strong>Key Skills:</strong> Defensive strategy, court topology design, lateral burst mapping</p>
+      <p><strong>Experience:</strong> Collaborated with IR developers to optimize foot tracking precision</p>
+      <p><strong>Email:</strong> malik.james@oteelite.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- Player 4 Modal -->
+<div id="modal4" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-black"> 
+      <span onclick="document.getElementById('modal4').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3>Trey Carter – Resume</h3>
+    </header>
+    <div class="w3-container">
+      <p><strong>Position:</strong> Wing | HaloLink Test Player</p>
+      <p><strong>Key Skills:</strong> Real-time sync performance, avatar control, long-distance latency testing</p>
+      <p><strong>Experience:</strong> First to complete a full game in cross-city multiplayer under 5ms</p>
+      <p><strong>Email:</strong> trey.carter@oteelite.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- Section 5: The League -->
+<div class="w3-container w3-white w3-padding-64" id="league">
+  <h3 class="w3-center w3-xxxlarge">🏆 THE LEAGUE</h3>
+  <p class="w3-center w3-large">“Not just a game. A revolution in competition.”</p>
+
+  <!-- Overview -->
+  <div class="w3-content w3-padding-32">
+    <h4>🔥 What is the Overtime Elite League?</h4>
+    <p>The <strong>OTE League</strong> is the world’s first fully-augmented competitive basketball league, powered by the VSPX system. It merges real athleticism with immersive tech for a next-gen sports experience.</p>
+    <p>12 pro teams battle it out on dynamic, AI-responsive courts. Players range from global draft picks to homegrown OTE prodigies.</p>
+  </div>
+
+  <!-- Format -->
+  <div class="w3-content w3-padding-32">
+    <div class="w3-col m6">
+      <h4>📊 League Format</h4>
+      <ul>
+        <li><strong>Season Length:</strong> 18 weeks</li>
+        <li><strong>Games Per Team:</strong> 2 per week (1 home, 1 away)</li>
+        <li><strong>Home Advantage:</strong> Teams play in custom AR arenas (e.g., Cyber Jungle, Lunar Arena)</li>
+        <li><strong>Playoffs:</strong> Top 8 teams enter a single-elimination bracket</li>
+        <li><strong>Finals:</strong> Best-of-3 at the annual <em>Overtime Summit</em></li>
+      </ul>
+    </div>
+    <div class="w3-col m6">
+      <h4>⚙️ OTE Mode – Rules of the Game</h4>
+      <ul>
+        <li><strong>Shot Clock:</strong> 18 seconds</li>
+        <li><strong>Dynamic Court Zones:</strong> AR zones adapt mid-play via AI</li>
+        <li><strong>Momentum Boosts:</strong> "Heat Zones" unlock after 3-score streaks</li>
+        <li><strong>Holo-Referees:</strong> AI officiating with instant infraction calls</li>
+        <li><strong>Power Player Mode:</strong> Once-per-game focus boost for a player</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 200px;"> </div>
+
+  <!-- Player Stats -->
+  <div class="w3-content w3-padding-32">
+    <h4>🧠 Player Stats & Progression</h4>
+    <p>Every player wears a <strong>NeuroChip S2</strong>, tracking:</p>
+    <ul class="w3-ul">
+      <li>Reaction Time</li>
+      <li>Decision Speed</li>
+      <li>Haptic Balance</li>
+      <li>Court Awareness</li>
+      <li>Jump & Sprint Efficiency</li>
+    </ul>
+    <p>Their <strong>Dynamic Performance Index (DPI)</strong> updates after every game, influencing rankings, bonuses, and draft stock.</p>
+  </div>
+
+  <!-- Team Styles -->
+  <div class="w3-content w3-padding-32">
+    <h4>🛡️ Team Identities (Examples)</h4>
+    <div class="w3-row-padding">
+      <div class="w3-col m6 l4">
+        <p><strong>CyberPhantoms (Tokyo):</strong> Glitchy visuals, fast-break chaos</p>
+        <p><strong>Lunar Raiders (Dubai):</strong> Cold, calculated low-gravity style</p>
+      </div>
+      <div class="w3-col m6 l4">
+        <p><strong>Neon Claws (LA):</strong> Full-court pressure with light-trail tracking</p>
+        <p><strong>Echo Hawks (Berlin):</strong> Uses sound-based vision & assists</p>
+      </div>
+      <div class="w3-col m6 l4">
+        <p><strong>StormForged (Seoul):</strong> Virtual lightning, wind resistance courts</p>
+        <p><strong>Quantum Wolves (Toronto):</strong> Tactical slow-motion replay zones</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Expansion -->
+  <div class="w3-content w3-padding-32">
+    <h4>🌍 Global Expansion</h4>
+    <ul class="w3-ul">
+      <li>Satellite leagues forming in Europe, Asia & South America</li>
+      <li>OTE Academies built with ed-tech partners</li>
+      <li>Inter-League AR Tournaments coming soon</li>
+    </ul>
+  </div>
+
+  <!-- Why It Matters -->
+  <div class="w3-content w3-padding-32">
+    <h4>🧬 Why the OTE League Matters</h4>
+    <ul class="w3-ul">
+      <li><strong>Neuro-Athletic Fusion:</strong> Players train both body and brain</li>
+      <li><strong>Tech-Fair Competition:</strong> Equal access to enhancements = pure skill</li>
+      <li><strong>Future of Sports:</strong> Redefines how athletes train, compete, and recover</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Join the Elite Button -->
+<div class="w3-center w3-padding-32">
+  <button onclick="document.getElementById('eliteModal').style.display='block'" class="w3-button w3-purple w3-hover-deep-purple w3-xlarge w3-round-large">
+    ✨ Join the Elite
+  </button>
+</div>
+
+<!-- Modal Popup -->
+<div id="eliteModal" class="w3-modal" style="z-index: 9999;">
+  <div class="w3-modal-content w3-animate-top w3-card-4 w3-white" style="max-width: 900px; padding: 32px; border-radius: 16px;">
+    <div class="w3-container">
+      <span onclick="document.getElementById('eliteModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h2 class="w3-center w3-xxlarge w3-text-purple">Step Into the Future of Basketball</h2>
+      <p class="w3-center w3-large">
+        Are you ready to feel the game like never before? Whether you’re a baller, a techie, or just hungry to change the world of sports — it starts here.
+      </p>
+      <div class="w3-row-padding w3-margin-top">
+        <!-- Paths -->
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-card w3-hover-shadow w3-padding w3-center">
+            <h4>🧑‍🚀 Become a Player</h4>
+            <p>Train with futuristic gear. Compete in an elite league. Make history.</p>
+            <button class="w3-button w3-purple w3-small w3-round">Sign Up</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-card w3-hover-shadow w3-padding w3-center">
+            <h4>🧪 Join the Beta</h4>
+            <p>Test groundbreaking AR tech. Help shape the future of virtual basketball.</p>
+            <button class="w3-button w3-purple w3-small w3-round">Sign Up</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-card w3-hover-shadow w3-padding w3-center">
+            <h4>🌐 Join the Community</h4>
+            <p>Get insider access, exclusive drops, and a front-row seat to the revolution.</p>
+            <button class="w3-button w3-purple w3-small w3-round">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup Form -->
+      <form class="w3-container w3-padding w3-border-top">
+        <h4 class="w3-text-dark-grey">Ready to Join?</h4>
+        <p><input class="w3-input w3-border w3-round" type="text" placeholder="Name" required></p>
+        <p><input class="w3-input w3-border w3-round" type="email" placeholder="Email" required></p>
+        <p>
+          <select class="w3-select w3-border w3-round" required>
+            <option value="" disabled selected>Choose your role</option>
+            <option value="player">Player</option>
+            <option value="tester">Tester</option>
+            <option value="fan">Fan / Community</option>
+          </select>
+        </p>
+        <p><input class="w3-input w3-border w3-round" type="text" placeholder="Social Media (optional)"></p>
+        <p>
+          <button type="submit" class="w3-button w3-purple w3-round-large w3-hover-deep-purple">🚀 Enter the Future</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Shop Section -->
+<div class="w3-container" style="padding:128px 16px; background-color: #483a49; color: white;" id="shop">
+  <h3 class="w3-center">🛒 Shop Elite Gear</h3>
+  <p class="w3-center w3-large">Step into the future. Wear the game.</p>
+
+  <div class="w3-row-padding w3-padding-32 w3-center">
+
+    <!-- Product Card 1 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="Goggles10.png" style="width:100%">
+        <div class="w3-container">
+          <h4>🥽 Elite Vision Goggles</h4>
+          <p class="w3-opacity">$399</p>
+          <button onclick="document.getElementById('modal5').style.display='block'" class="w3-button w3-purple w3-margin-bottom">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="Neurochip10.png" style="width:100%">
+        <div class="w3-container">
+          <h4>🎮 OTE Control Chip (v2.0)</h4>
+          <p class="w3-opacity">$249</p>
+          <button onclick="document.getElementById('modal6').style.display='block'" class="w3-button w3-purple w3-margin-bottom">More Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card w3-white">
+        <img src="Jersey10.png" style="width:100%">
+        <div class="w3-container">
+          <h4>👕 Overtime Jersey 2099 Edition</h4>
+          <p class="w3-opacity">$79</p>
+          <button onclick="document.getElementById('modal7').style.display='block'" class="w3-button w3-purple w3-margin-bottom">More Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals for More Details -->
+  <div id="modal5" class="w3-modal" onclick="this.style.display='none'">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-purple">
+        <span onclick="document.getElementById('modal1').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h2>Elite Vision Goggles</h2>
+      </header>
+      <div class="w3-container">
+        <p style="color: black;">Unlock next-gen court vision. Lightweight AR goggles synced with our neural chip tech for real-time overlays.</p>
+        <ul style="color: black;">
+          <li>Ultra-low latency HUD</li>
+          <li>Sweat-resistant nano coating</li>
+          <li>Syncs with OTE Chip v2</li>
+          <li>Anti-glare optics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal6" class="w3-modal" onclick="this.style.display='none'">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-purple">
+        <span onclick="document.getElementById('modal2').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h2>OTE Control Chip (v2.0)</h2>
+      </header>
+      <div class="w3-container">
+        <p style="color: black;">Connect your body to the game. Feel every moment with advanced haptics and neural integration.</p>
+        <ul style="color: black;">
+          <li>Haptic response system</li>
+          <li>Bluetooth mesh pairing</li>
+          <li>Skin-safe adhesive</li>
+          <li>10-hour battery life</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal7" class="w3-modal" onclick="this.style.display='none'">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-purple">
+        <span onclick="document.getElementById('modal3').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h2>Overtime Jersey 2099 Edition</h2>
+      </header>
+      <div class="w3-container">
+        <p style="color: black;">Heat-reactive fabric with circuit accent. Customizable, futuristic and breathable.</p>
+        <ul style="color: black;">
+          <li>Smart-temp ventilation</li>
+          <li>LED trim option</li>
+          <li>Home, away, and night variants</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container" style="background-color:#ccc; padding:128px 16px" id="contact">
+  <h3 class="w3-center" style="color:back;">CONTACT</h3>
+  <p class="w3-center w3-large" style="color:black;">Let’s get in touch. Send us a message:</p>
+  
+  <div class="w3-row-padding" style="margin-top:48px">
+    <div class="w3-half">
+      <p style="color:black;"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New Jersey, US</p>
+      <p style="color:black;"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +01 555 1020</p>
+      <p style="color:black;"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Jeanpchr@Kean.edu</p>
+      <br>
+      <img src="Location.png" class="w3-image w3-greyscale" style="width:100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+    </div>
+
+    <div class="w3-half">
+      <form action="/action_page.php" target="_blank" class="w3-container w3-card-4 w3-padding" style="background-color: #5b4c5f; border-radius: 12px;">
+        <p><input class="w3-input w3-border w3-round" style="background-color:#eee;" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border w3-round" style="background-color:#eee;" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border w3-round" style="background-color:#eee;" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border w3-round" style="background-color:#eee;" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-purple w3-round-large w3-hover-opacity" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center  w3-padding-64" style="background-color: #5b4c5f;">
+  <a href="#home" class="w3-button w3-purple w3-round-large w3-hover-opacity"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+ <p class="w3-small" style="color:white;">Join the Elite Movement!</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+  // Close all modals when close button is clicked
+  document.querySelectorAll('.close').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btn.closest('.w3-modal').style.display = 'none';
+    });
+  });
+
+  // Optional: Close modal when clicking outside of the modal content
+  window.addEventListener('click', function(event) {
+    document.querySelectorAll('.w3-modal').forEach(function(modal) {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
